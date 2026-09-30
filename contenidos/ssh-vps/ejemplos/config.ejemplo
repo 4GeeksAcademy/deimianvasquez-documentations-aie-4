@@ -1,0 +1,16 @@
+# Ejemplo de ~/.ssh/config
+# Copia a ~/.ssh/config, ajusta valores y usa: ssh mi-vps
+#
+# chmod 600 ~/.ssh/config
+
+Host mi-vps
+  HostName 203.0.113.10
+  User ubuntu
+  IdentityFile ~/.ssh/id_ed25519
+  # Port 22
+
+# Host otro-servidor
+#   HostName 203.0.113.20
+#   User debian
+#   IdentityFile ~/.ssh/id_ed25519_vps
+#   Port 2222

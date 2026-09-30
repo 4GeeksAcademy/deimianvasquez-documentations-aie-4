@@ -11,6 +11,7 @@ Material por tema.
 - [HTML](contenidos/html/)
   - [HTML semantico](contenidos/html/semantico/) — estructura con significado, landmarks, formularios y checklist
 - [SEO y GEO](contenidos/seo-geo/) — buscadores tradicionales y motores generativos
+- [SSH y VPS](contenidos/ssh-vps/) — de cero a conectar con llave SSH
 
 ## Areas de trabajo con IA
 
