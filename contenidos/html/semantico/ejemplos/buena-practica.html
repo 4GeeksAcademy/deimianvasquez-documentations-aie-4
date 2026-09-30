@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buena practica — HTML semantico</title>
+  </head>
+  <body>
+    <!-- Misma pagina que mala-practica.html, con tags semanticos -->
+    <header>
+      <p>Mi sitio</p>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/modulos">Modulos</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>HTML semantico</h1>
+        <p>
+          Aprende a estructurar paginas con significado. Este ejemplo muestra
+          una estructura clara con landmarks y tags correctos.
+        </p>
+      </section>
+
+      <section>
+        <h2>Proximos temas</h2>
+
+        <article>
+          <h3>Formularios</h3>
+          <p>Labels, inputs y validacion basica.</p>
+          <p><a href="/modulos/formularios">Ver mas sobre formularios</a></p>
+        </article>
+
+        <article>
+          <h3>Accesibilidad</h3>
+          <p>Semantica como base de a11y.</p>
+          <p><a href="/modulos/accesibilidad">Ver mas sobre accesibilidad</a></p>
+        </article>
+      </section>
+
+      <aside>
+        <h2>Tip</h2>
+        <p>Primero el tag correcto; ARIA solo si hace falta.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Pie de pagina</p>
+      <form action="/newsletter" method="post">
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" required />
+        <button type="submit">Suscribirme</button>
+      </form>
+    </footer>
+  </body>
+</html>

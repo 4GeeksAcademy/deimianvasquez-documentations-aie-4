@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mala practica — todo con div</title>
+  </head>
+  <body>
+    <!-- Ejemplo intencionalmente malo: casi sin semantica -->
+    <div class="header">
+      <div class="logo">Mi sitio</div>
+      <div class="nav">
+        <div><a href="/">Inicio</a></div>
+        <div><a href="/modulos">Modulos</a></div>
+        <div><a href="/contacto">Contacto</a></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="title">HTML semantico</div>
+      <div>
+        Aprende a estructurar paginas con significado. Este ejemplo muestra
+        como NO deberia verse el markup.
+      </div>
+
+      <div class="section">
+        <div class="subtitle">Proximos temas</div>
+        <div class="card">
+          <div class="card-title">Formularios</div>
+          <div>Labels, inputs y validacion basica.</div>
+          <div class="btn" onclick="alert('demo')">Ver mas</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Accesibilidad</div>
+          <div>Semantica como base de a11y.</div>
+          <div class="btn" onclick="alert('demo')">Ver mas</div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="subtitle">Tip</div>
+        <div>Primero el tag correcto; ARIA solo si hace falta.</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Pie de pagina</div>
+      <div>
+        <input type="email" placeholder="Correo" />
+        <div class="btn" onclick="alert('demo')">Suscribirme</div>
+      </div>
+    </div>
+  </body>
+</html>
