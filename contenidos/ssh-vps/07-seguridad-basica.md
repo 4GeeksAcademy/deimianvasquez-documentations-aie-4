@@ -58,9 +58,6 @@ sudo systemctl restart sshd
 - Una llave por maquina/persona; revoca la que ya no uses
 - No abras SSH a internet en puertos raros "por ocultismo" sin saber por que; el hardening real es llaves + sin password + (mas adelante) firewall
 
-## Que queda fuera de este tema
-
-`ufw` a fondo, fail2ban, 2FA, bastion hosts, VPN. Pueden ser temas aparte.
 
 ## Siguiente
 
